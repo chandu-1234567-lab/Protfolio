@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  body {
+    background-color: #f6f8fb;
+    color: #1e293b;
+    overflow-x: hidden;
+  }
+}
+
+/* Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Ethereal Gradient Mesh Canvas */
+.bg-nordic-canvas {
+  background-color: #f6f8fb;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(224, 231, 255, 0.75) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(254, 243, 199, 0.6) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(243, 232, 255, 0.5) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(236, 253, 245, 0.7) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(254, 235, 230, 0.6) 0px, transparent 50%);
+}
+
+.bg-aurora-glow {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(244, 114, 182, 0.08) 50%, rgba(16, 185, 129, 0.08) 100%);
+}
